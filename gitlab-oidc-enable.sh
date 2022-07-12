@@ -1,4 +1,5 @@
 #!/bin/sh
+sleep 15
 vault operator unseal _key
 sleep 5
 vault login _token
