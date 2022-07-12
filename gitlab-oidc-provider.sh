@@ -1,6 +1,8 @@
 #!/bin/sh
 vault auth enable oidc
 
+vault login _token
+
 vault write auth/oidc/config \
 oidc_client_id="_oidc_client_id" \
 oidc_client_secret="_oidc_client_secret" \
