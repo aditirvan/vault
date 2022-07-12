@@ -9,7 +9,7 @@ oidc_client_secret="_oidc_client_secret" \
 default_role="default" \
 oidc_discovery_url="_oidc_discovery_url"
 
-vault write auth/oidc/role/demo \
+vault write auth/oidc/role/default \
 user_claim="sub" \
 allowed_redirect_uris="_allowed_redirect_uris" \
 oidc_scopes="openid" \
